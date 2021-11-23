@@ -37,4 +37,6 @@ png(filename="plot3.png",width=480,height=480)
 plot(df1$datetime2,df1$Sub_metering_1,col="black",type="l",xlab="",ylab="Energy sub metering")
 lines(df1$datetime2,df1$Sub_metering_2,col="red")
 lines(df1$datetime2,df1$Sub_metering_3,col="blue")
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+       lty = 1, lwd = 2, col = c("black", "red", "blue"))
 dev.off()
